@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rock-Paper-Scissors</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+
+<body>
+	<h1>This is a a game of rock-scissors-paper. Please select your gesture at the bottom.</h1>
+    <div>
+        <div class="popup" id="popup-left-div">
+        	<h1>You</h1>
+            <img class="popup-left" id="popup-hand-left" src="img/hand.svg" alt="">
+            <img class="popup-left" id="popup-fist-left" src="img/fist.svg" alt="">
+            <img class="popup-left" id="popup-scissors-left" src="img/scissors.svg" alt="">
+        </div>
+        <div class="popup" id="popup-right-div">
+        	<h1>Opponent</h1>
+            <img class="popup-right" id="popup-hand-right" src="img/hand.svg" alt="">
+            <img class="popup-right" id="popup-fist-right" src="img/fist.svg" alt="">
+            <img class="popup-right" id="popup-scissors-right" src="img/scissors.svg" alt="">
+        </div>
+    </div>
+    <div id="select-panal">
+        <img class="select" id="hand" src="img/hand.svg" alt="">
+        <img class="select" id="fist" src="img/fist.svg" alt="">
+        <img class="select" id="scissors" src="img/scissors.svg" alt="">
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>

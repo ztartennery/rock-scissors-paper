@@ -1,0 +1,31 @@
+.select {
+    height: 120px;
+    width: 120px;
+}
+
+#select-panal {
+
+    position: fixed;
+    bottom: 0;
+}
+
+.popup {
+   height: 500px;
+    width: 47%;
+    display: inline-block;
+    margin: auto;
+    border: 1px solid red;
+}
+
+.popup-left, .popup-right{
+
+	position:absolute;
+	width: 50%;
+	height: 50%;
+
+}
+
+ .popup-right{
+ transform: scaleX(-1);
+
+ }
