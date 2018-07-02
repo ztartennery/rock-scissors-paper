@@ -13,24 +13,24 @@ console.log('set hidden');
 
 hand.addEventListener("click", function() {
     reset();
-    TweenMax.to("#popup-hand-left", 1, { autoAlpha: 1 });
-    TweenMax.from("#popup-hand-left", 1, { x: -100 });
+    TweenMax.to("#popup-hand-left", 1.3, { autoAlpha: 1 });
+    TweenMax.from("#popup-hand-left", 1.3, { x: -150 });
     opponent();
     if (number == 2) { result.innerText = "WIN!!"; } else if (number == 3) { result.innerText = "LOSE!!"; } else { result.innerText = "STANDOFF!!"; }
 });
 
 fist.addEventListener("click", function() {
     reset();
-    TweenMax.to("#popup-fist-left", 1, { autoAlpha: 1 });
-    TweenMax.from("#popup-fist-left", 1, { x: -100 });
+    TweenMax.to("#popup-fist-left", 1.3, { autoAlpha: 1 });
+    TweenMax.from("#popup-fist-left", 1.3, { x: -150 });
     opponent();
     if (number == 3) { result.innerText = "WIN!!"; } else if (number == 1) { result.innerText = "LOSE!!"; } else { result.innerText = "STANDOFF!!"; }
 });
 
 scissors.addEventListener("click", function() {
     reset();
-    TweenMax.to("#popup-scissors-left", 1, { autoAlpha: 1 });
-    TweenMax.from("#popup-scissors-left", 1, { x: -100 });
+    TweenMax.to("#popup-scissors-left", 1.3, { autoAlpha: 1 });
+    TweenMax.from("#popup-scissors-left", 1.3, { x: -150 });
     opponent();
     if (number == 1) { result.innerText = "WIN!!"; } else if (number == 2) { result.innerText = "LOSE!!"; } else { result.innerText = "STANDOFF!!"; }
 });
@@ -39,8 +39,8 @@ scissors.addEventListener("click", function() {
 
 
 function reset() {
-    TweenMax.set(".popup-right", { autoAlpha: 0 });
-    TweenMax.set(".popup-left", { autoAlpha: 0 });
+	TweenMax.set(".popup-left", { autoAlpha: 0, x: 0 });
+    TweenMax.set(".popup-right", { autoAlpha: 0, x: 0 });
     number = Math.floor((Math.random() * 3) + 1);
 }
 
@@ -50,19 +50,19 @@ function reset() {
 function opponent() {
     if (number == 1) {
 
-        TweenMax.to("#popup-hand-right", 1, { autoAlpha: 1 });
-        TweenMax.from("#popup-hand-right", 1, { x: 100 });
+        TweenMax.to("#popup-hand-right", 1.3, { autoAlpha: 1 });
+        TweenMax.from("#popup-hand-right", 1.3, { x: 150 });
 
     }
     if (number == 2) {
 
-        TweenMax.to("#popup-fist-right", 1, { autoAlpha: 1 });
-        TweenMax.from("#popup-fist-right", 1, { x: 100 });
+        TweenMax.to("#popup-fist-right", 1.3, { autoAlpha: 1 });
+        TweenMax.from("#popup-fist-right", 1.3, { x: 150 });
 
     }
     if (number == 3) {
 
-        TweenMax.to("#popup-scissors-right", 1, { autoAlpha: 1 });
-        TweenMax.from("#popup-scissors-right", 1, { x: 100 });
+        TweenMax.to("#popup-scissors-right", 1.3, { autoAlpha: 1 });
+        TweenMax.from("#popup-scissors-right", 1.3, { x: 150 });
     }
 }
